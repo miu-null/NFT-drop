@@ -8,7 +8,7 @@ import { Base64 } from "./libraries/Base64.sol";
 
 
 
-contract PresentForYou is ERC721URIStorage,Ownable {
+contract PresentForYou is ERC721URIStorage {
   using Counters for Counters.Counter;
   Counters.Counter private _tokenIds;
   bool private isSaleEnded = false;
@@ -17,7 +17,7 @@ contract PresentForYou is ERC721URIStorage,Ownable {
   address private approvedAddress = 0xf405535E43BeeF232e67D95F77F36E6a0B4cfAe1;
 
   // MAGICAL EVENTS.
-  event NewGiftMinted(address sender, uint256 tokenId);
+event NewGiftMinted(address sender, uint256 tokenId);
 
   constructor() ERC721 ("present", "philia") {
     console.log("This is present for you"); 
@@ -50,6 +50,8 @@ modifier saleCheck{
     _tokenIds.increment();
 
   }
+
+
   function getIsSaleEnded() public view returns (bool) {
     return isSaleEnded;
   }

@@ -85,25 +85,6 @@
 					{
 						"indexed": true,
 						"internalType": "address",
-						"name": "previousOwner",
-						"type": "address"
-					},
-					{
-						"indexed": true,
-						"internalType": "address",
-						"name": "newOwner",
-						"type": "address"
-					}
-				],
-				"name": "OwnershipTransferred",
-				"type": "event"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": true,
-						"internalType": "address",
 						"name": "from",
 						"type": "address"
 					},
@@ -237,19 +218,6 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "owner",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -266,13 +234,6 @@
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "renounceOwnership",
-				"outputs": [],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -417,19 +378,6 @@
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "newOwner",
-						"type": "address"
-					}
-				],
-				"name": "transferOwnership",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -450,14 +398,8 @@
 				"name()": {
 					"details": "See {IERC721Metadata-name}."
 				},
-				"owner()": {
-					"details": "Returns the address of the current owner."
-				},
 				"ownerOf(uint256)": {
 					"details": "See {IERC721-ownerOf}."
-				},
-				"renounceOwnership()": {
-					"details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
 				},
 				"safeTransferFrom(address,address,uint256)": {
 					"details": "See {IERC721-safeTransferFrom}."
@@ -476,9 +418,6 @@
 				},
 				"transferFrom(address,address,uint256)": {
 					"details": "See {IERC721-transferFrom}."
-				},
-				"transferOwnership(address)": {
-					"details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
 				}
 			},
 			"version": 1
@@ -610,11 +549,11 @@
 			]
 		},
 		"contracts/PresentForYou.sol": {
-			"keccak256": "0x0b13664b56342d3dcfeb295044b4e9afb4d3ae4a5a5aa5dfaa3f0938c3de32e0",
+			"keccak256": "0x51a46817dd4a24925bac5aa938a41dffac40d68902a9db140c481b9fe4d3fcc1",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://fb0aba7057081e74ba6d5ebce204c75dbf5b34da2ab7f4031223c49c110c788a",
-				"dweb:/ipfs/QmeDGTDHumq1JZAKGt5LbUVAx71V3fdvoeuE6teHqy6WpV"
+				"bzz-raw://a9dcc85e559a4cf9650da1b81c4d8c18b0991e23874b22ecd120629e7205d0eb",
+				"dweb:/ipfs/QmTGmuPwpeVwkDHDGELQjbVm2VrshKRKrYWjgAGXX1WMTV"
 			]
 		},
 		"contracts/libraries/Base64.sol": {
